@@ -1,0 +1,6 @@
+hoge: 'ほげ'
+aaa: 'HOGE'
+index:
+    siteName: 'サイト名 (index.hbs)'
+test:
+    siteName: 'サイト名 (test.hbs)'

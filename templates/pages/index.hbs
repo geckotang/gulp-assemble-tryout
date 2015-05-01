@@ -1,0 +1,25 @@
+---
+title: タイトル
+links:
+  - index.html
+  - sample-use-default-layout.html
+  - sample-use-helpers.html
+  - sample-use-layout.html
+  - sample-use-partial.html
+  - sample-use-ymldata.html
+  - sample-without-layout.html
+---
+
+
+<ul>
+  {{#each links}}
+  <li><a href="{{this}}">{{this}}</a></li>
+  {{/each}}
+</ul>
+
+
+{{#if production}}
+isProd
+{{else}}
+isntProd
+{{/if}}

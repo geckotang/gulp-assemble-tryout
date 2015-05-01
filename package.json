@@ -1,0 +1,24 @@
+{
+  "name": "gulp-assemble-tryout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "assemble": "^0.6.0-beta.5",
+    "gulp": "^3.8.11",
+    "gulp-assemble": "^0.3.2",
+    "gulp-extname": "^0.2.0",
+    "gulp-watch": "^4.2.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.9",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0"
+  }
+}

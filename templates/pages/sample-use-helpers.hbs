@@ -1,0 +1,116 @@
+---
+title: すばらしいタイトル
+permalink: index.html
+array: 
+  - a
+  - b
+  - c
+  - d
+object:
+  key1: value1
+  key2: value2
+  key3: valur3
+comments:
+  - name: なまえ1
+    email: example1@example.com
+  - name: なまえ2
+    email: example2@example.com
+  - name: なまえ3
+    email: example3@example.com
+  - name: なまえ4
+    email: example4@example.com
+---
+
+<xmp>
+  \{{#each comments}}
+  <div><a href="/posts/\{{../permalink}}#\{{name}}">\{{email}}</a></div>
+  \{{/each}}
+</xmp>
+
+{{#each comments}}
+<div><a href="/posts/{{../permalink}}#{{name}}">{{email}}</a></div>
+{{/each}}
+
+<hr>
+
+<xmp>
+  \{{#eachIndex array}}
+    "\{{item}}" is \{{index}}
+  \{{/eachIndex}}
+</xmp>
+
+{{#eachIndex array}}
+  "{{item}}" is {{index}}
+{{/eachIndex}}
+
+<hr>
+
+<xmp>
+  \{{first array}}
+</xmp>
+
+{{first array}}
+
+<hr>
+
+<xmp>
+  array length is \{{length array}}
+</xmp>
+
+array length is {{length array}}
+
+<hr>
+
+<xmp>
+  \{{last array}}
+</xmp>
+
+{{last array}}
+
+<hr>
+
+<xmp>
+  \{{#eachIndex comments}}
+    \{{item.name}} is \{{index}}
+  \{{/eachIndex}}
+</xmp>
+
+{{#eachIndex comments}}
+  {{item.name}} is {{index}}
+{{/eachIndex}}
+
+<hr>
+
+<xmp>
+\{{#eachProperty object}}
+  \{{property}} - \{{value}}<br/>
+\{{/eachProperty }}
+</xmp>
+
+{{#eachProperty object}}
+  {{property}} - {{value}}<br/>
+{{/eachProperty }}
+
+<hr>
+
+<xmp>
+  index.siteName is \{{ index.siteName }}
+</xmp>
+
+index.siteName is {{ index.siteName }}
+
+<hr>
+
+<xmp>
+  \{{partial "banner"}}
+</xmp>
+
+{{partial "banner"}}
+
+<hr>
+
+<xmp>
+  <a href="\{{urlResolve "http://example.com/one" "/two"}}"></a>
+</xmp>
+
+<a href="{{urlResolve "http://example.com/one" "/two"}}">TWO</a>
